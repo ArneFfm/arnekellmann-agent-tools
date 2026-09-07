@@ -1,0 +1,35 @@
+name: Publish npm SDK
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: publish-npm
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: npm
+    permissions:
+      contents: read
+      id-token: write
+    defaults:
+      run:
+        working-directory: packages/sdk-js
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '24'
+      - name: Check SDK and CLI
+        run: |
+          node --check index.js
+          node --check cli.js
+          node cli.js --help
+          node cli.js --version
+          npm pack --dry-run
+      - name: Publish through OIDC
+        run: npm publish --access public
