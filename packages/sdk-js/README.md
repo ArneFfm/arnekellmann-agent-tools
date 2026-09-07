@@ -1,20 +1,20 @@
 # Arne Kellmann JavaScript / TypeScript SDK and CLI
 
-Local package for the anonymous, read-only consulting services API. Registry
-publication is pending. SDK integration source is distributed separately from the
+JavaScript / TypeScript package for the anonymous, read-only consulting services API.
+SDK integration source is distributed separately from the
 private website repository at [arnekellmann-agent-tools](https://github.com/ArneFfm/arnekellmann-agent-tools).
 No open-source license has been granted.
 
-Requires Node.js 20 or later. From an authorized checkout:
+Requires Node.js 20 or later:
 
 ```sh
-npm install /absolute/path/to/packages/sdk-js
+npm install @arnek/arnekellmann-sdk
 npx arnekellmann --help
 npx arnekellmann services de
 ```
 
 ```ts
-import { ArneKellmannClient, ServicesApiError } from '@arnekellmann/sdk';
+import { ArneKellmannClient, ServicesApiError } from '@arnek/arnekellmann-sdk';
 
 try {
   const catalog = await new ArneKellmannClient().listServices('en');

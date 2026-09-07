@@ -1,5 +1,5 @@
 {
-  "name": "@arnekellmann/sdk",
+  "name": "@arnek/arnekellmann-sdk",
   "version": "0.1.0",
   "type": "module",
   "description": "Read the public Arne Kellmann consulting services API.",
