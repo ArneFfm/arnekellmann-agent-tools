@@ -28,7 +28,17 @@ The root plugin.json and mcp.json use Agent Plugins 1.0.0. Install this reposito
 - JavaScript/TypeScript and CLI: packages/sdk-js
 - Python: packages/sdk-python
 
-Install from the source directories as described in their READMEs. npm and PyPI registry publication is not yet confirmed.
+Install the official registry packages:
+
+```sh
+npm install @arnek/arnekellmann-sdk
+npx --package @arnek/arnekellmann-sdk arnekellmann services en
+python -m pip install arnekellmann-sdk
+```
+
+[npm](https://www.npmjs.com/package/@arnek/arnekellmann-sdk) · [PyPI](https://pypi.org/project/arnekellmann-sdk/)
+
+Python releases use the manually triggered publish-pypi.yml workflow on main and a repository-bound PyPI trusted publisher.
 
 ## Documentation
 
