@@ -24,7 +24,8 @@ except HTTPError as error:
 
 `list_services(language="en")` accepts `en` or `de` and returns the complete
 catalog as a dictionary: `language`, `services` (`id`, `name`, `description`,
-`url`), `pricing` (custom quote, no published rates), and `contactUrl`. No
+`url`), `pricing` (custom quote based on EUR 120/hour net for all services: `publishedRates: true`,
+`hourlyRate: 120`, `currency: "EUR"`, `unit: "hour"`, `vatIncluded: false`), and `contactUrl`. No
 pagination is needed for this small catalog.
 
 For development: `Client("http://localhost:4321")`. API paths resolve from the

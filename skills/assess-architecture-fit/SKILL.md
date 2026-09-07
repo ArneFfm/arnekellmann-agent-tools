@@ -12,7 +12,7 @@ guardrails, costs, architecture assessment, implementation or team enablement.
    call list_services through https://arnekellmann.de/mcp.
 2. Match the user's stated obstacle to the published service description. Cite the
    source URL and explain mismatches instead of recommending every service.
-3. Read https://arnekellmann.de/pricing.md. No fixed rates or availability are published.
+3. Read https://arnekellmann.de/pricing.md. All services cost EUR 120 per hour net (excluding VAT); project scope is individually agreed. Availability is not published.
 4. If asked to prepare an enquiry, draft the project goal, current state and questions.
    Open https://arnekellmann.de/#contact. The WebMCP stage_contact_enquiry tool fills
    visible fields but does not send them. Leave review, privacy consent, bot verification

@@ -48,7 +48,7 @@ Python releases use the manually triggered publish-pypi.yml workflow on main and
 - [Pricing and limits](https://arnekellmann.de/pricing.md)
 - [Smithery](https://smithery.ai/servers/arnekellmann/consulting)
 
-Consulting is individually scoped; no fixed rates or availability are published. The website source repository is private and is not part of this distribution.
+All consulting services cost EUR 120 per hour net (excluding VAT); project scope is individually agreed. Availability is not published. The website source repository is private and is not part of this distribution.
 
 ## License
 

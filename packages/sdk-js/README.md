@@ -29,7 +29,8 @@ try {
 
 `listServices(language = 'en')` accepts `en` or `de` and returns the complete
 catalog: `language`, `services` (`id`, `name`, `description`, `url`), `pricing`
-(custom quote, no published rates), and `contactUrl`. TypeScript declarations
+(custom quote based on EUR 120/hour net for all services: `publishedRates: true`,
+`hourlyRate: 120`, `currency: "EUR"`, `unit: "hour"`, `vatIncluded: false`), and `contactUrl`. TypeScript declarations
 are included. No pagination is needed for this small catalog.
 
 CLI output is JSON on stdout; failures go to stderr with exit code 1. `--help`

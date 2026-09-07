@@ -8,7 +8,15 @@ export interface Service {
 export interface ServicesResponse {
   language: Language;
   services: Service[];
-  pricing: { type: 'custom_quote'; publishedRates: false; url: string };
+  pricing: {
+    type: 'custom_quote';
+    publishedRates: true;
+    hourlyRate: 120;
+    currency: 'EUR';
+    unit: 'hour';
+    vatIncluded: false;
+    url: string;
+  };
   contactUrl: string;
 }
 export declare class ArneKellmannClient {
