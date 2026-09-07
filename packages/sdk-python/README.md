@@ -4,10 +4,10 @@ Python package for the anonymous, read-only consulting services API. SDK integra
 private website repository at [arnekellmann-agent-tools](https://github.com/ArneFfm/arnekellmann-agent-tools).
 No open-source license has been granted.
 
-Requires Python 3.10 or later. No runtime dependencies. Install version 0.1.0 from PyPI:
+Requires Python 3.10 or later. No runtime dependencies. Install version 0.1.1 from PyPI:
 
 ```sh
-python -m pip install arnekellmann-sdk==0.1.0
+python -m pip install arnekellmann-sdk==0.1.1
 ```
 
 ```python

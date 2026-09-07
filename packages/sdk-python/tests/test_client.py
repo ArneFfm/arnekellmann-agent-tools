@@ -12,6 +12,7 @@ class ClientTests(unittest.TestCase):
         self.assertEqual(result['language'], 'de')
         self.assertEqual(request.call_args.args[0].full_url, 'http://localhost:4321/api/v1/services?language=de')
         self.assertEqual(request.call_args.args[0].get_header('Accept'), 'application/json')
+        self.assertIn('arnekellmann-sdk/', request.call_args.args[0].get_header('User-agent'))
         self.assertEqual(request.call_args.kwargs['timeout'], 10)
 
     def test_rejects_invalid_language_without_request(self):

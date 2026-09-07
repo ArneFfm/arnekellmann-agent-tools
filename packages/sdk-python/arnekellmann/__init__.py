@@ -17,7 +17,7 @@ class Client:
             raise ValueError("Use language en or de.")
         request = Request(
             f"{self.base_url}/api/v1/services?language={language}",
-            headers={"Accept": "application/json"},
+            headers={"Accept": "application/json", "User-Agent": "arnekellmann-sdk/0.1.1 (+https://arnekellmann.de/developers)"},
         )
         with urlopen(request, timeout=10) as response:
             return json.load(response)
