@@ -1,0 +1,39 @@
+{
+  "name": "@arnekellmann/sdk",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Read the public Arne Kellmann consulting services API.",
+  "homepage": "https://arnekellmann.de/developers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArneFfm/arnekellmann-agent-tools.git",
+    "directory": "packages/sdk-js"
+  },
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./index.js"
+  },
+  "bin": {
+    "arnekellmann": "./cli.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "README.md",
+    "index.d.ts"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "types": "./index.d.ts",
+  "license": "UNLICENSED",
+  "keywords": [
+    "arnekellmann",
+    "consulting",
+    "sdk",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

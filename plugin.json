@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "arnekellmann",
+  "version": "0.1.0",
+  "description": "Read Arne Kellmann consulting services and prepare enquiries for review.",
+  "homepage": "https://arnekellmann.de/developers",
+  "repository": "https://github.com/ArneFfm/arnekellmann-agent-tools"
+}

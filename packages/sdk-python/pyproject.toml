@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arnekellmann-sdk"
+version = "0.1.0"
+description = "Read the public Arne Kellmann consulting services API"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://arnekellmann.de/developers"
+Repository = "https://github.com/ArneFfm/arnekellmann-agent-tools"
+Documentation = "https://arnekellmann.de/developers"
+
+[tool.setuptools.packages.find]
+include = ["arnekellmann*"]
