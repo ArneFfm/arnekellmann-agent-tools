@@ -14,7 +14,7 @@
     "import": "./index.js"
   },
   "bin": {
-    "arnekellmann": "./cli.js"
+    "arnekellmann": "cli.js"
   },
   "files": [
     "index.js",
