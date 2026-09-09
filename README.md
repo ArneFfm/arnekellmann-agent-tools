@@ -4,6 +4,8 @@ Official integration artifacts for [Arne Kellmann](https://arnekellmann.de), an 
 
 ## Connect
 
+- [Install Arne Kellmann in ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a9f450b7ba881919aa6afa675c37d74) — published version 1.0.0.
+
 Public, anonymous Streamable HTTP MCP:
 
 - Services and documents: https://arnekellmann.de/mcp
