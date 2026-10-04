@@ -12,6 +12,9 @@ Public, anonymous Streamable HTTP MCP:
 - Documentation search: https://arnekellmann.de/mcp/docs
 
 No account or API key is required. Tools read published information; none sends email, books services or makes payments.
+Both endpoints support stateless MCP `2026-07-28` and legacy clients. Modern requests use `params._meta` protocol metadata and matching `MCP-Protocol-Version`, `Mcp-Method` and, for named tool calls, `Mcp-Name` headers. Neither endpoint exposes Events or webhook subscriptions.
+
+The [server card](https://arnekellmann.de/.well-known/mcp/server-card.json) describes the deployed service. [`server.json`](server.json) mirrors the [MCP Registry entry](https://registry.modelcontextprotocol.io/v0.1/servers/de.arnekellmann%2Fconsulting/versions/latest); registry, plugin and server software versions are independent. Updating these files does not rescan an installed ChatGPT plugin.
 
 ## Install the consulting skill
 
